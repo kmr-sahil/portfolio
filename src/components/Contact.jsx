@@ -14,8 +14,8 @@ function Contact() {
             <p className='self-center font-light text-[10px] text-l-text'>-- or just --</p>
 
             <div className='self-stretch bg-l-secondary flex flex-col rounded-md items-start px-[0.75rem] py-[0.75rem]'>
-                <h3 className='font-medium text-[12px]'>Want to hire me as a freelancer ? Let’s Discuss</h3>
-                <p className='font-light text-[10px]'>Drop your message and let's discuss about your project.</p>
+                <h3 className='font-medium text-[12px] tablet-lg:text-[1rem]'>Want to hire me as a freelancer ? Let’s Discuss</h3>
+                <p className='font-light text-[10px] tablet-lg:text-[12px]'>Drop your message and let's discuss about your project.</p>
                 <a href="" className='mt-[0.75rem] w-[100%] bg-[#4ADE80] font-medium text-[10px] py-[0.5rem] rounded-md'>Chat on Whatsapp</a>
             </div>
         </div>

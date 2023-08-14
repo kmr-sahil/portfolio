@@ -12,10 +12,10 @@ function Info() {
             </div>
         </div>
         <div className='text-l-text text-[1.25rem] flex basis-[10%] laptop:basis-[0%] flex-col laptop:flex-row flex-wrap justify-between tablet:gap-4 outline outline-l-secondary outline-[2px] rounded-xl px-[18px] py-[24px] laptop:py-[16px]'>
-            <i className="fa-brands fa-linkedin"></i>
-            <i className="fa-brands fa-square-x-twitter"></i>
-            <i className="fa-brands fa-square-github"></i>
-            <i className="fa-brands fa-square-whatsapp"></i>
+            <a target='_blank' href='https://www.linkedin.com/in/sahil-kumar-5b781721b/' className="fa-brands fa-linkedin"></a>
+            <a target='_blank' href='https://twitter.com/kr_sahil' className="fa-brands fa-square-x-twitter"></a>
+            <a target='_blank' href='https://github.com/kmr-sahil' className="fa-brands fa-square-github"></a>
+            <a target='_blank' href='https://www.linkedin.com/in/sahil-kumar-5b781721b/' className="fa-brands fa-square-whatsapp"></a>
         </div>
     </div>
   )
