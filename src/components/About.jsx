@@ -24,8 +24,8 @@ function About() {
 
             <div className='w-[100%] my-[1.5rem] flex flex-col gap-[1rem] items-center'>
                 <h2 className='font-mont font-bold text-[1rem] tablet-lg:text-[18px] text-start self-start '>Portfolio</h2>
-                <Project title={"Retro News"} img={"img1"} s1={"React"} s2={"Tailwind CSS"} s3={"Front-End"} para={"Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API."}></Project>
-                <Project title={"Kolor Tool"} img={"img1"} s1={"HTML"} s2={"Tailwind CSS"} s3={"JavaScript"} para={"Effortlessly create harmonious color palettes with my innovative opacity-free shade generator website."}></Project>
+                <Project link={'https://github.com/kmr-sahil/retro-news'} title={"Retro News"} img={"img1"} s1={"React"} s2={"Tailwind CSS"} s3={"Front-End"} para={"Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API."}></Project>
+                <Project link={'https://github.com/kmr-sahil/kolor-tool'} title={"Kolor Tool"} img={"img1"} s1={"HTML"} s2={"Tailwind CSS"} s3={"JavaScript"} para={"Effortlessly create harmonious color palettes with my innovative opacity-free shade generator website."}></Project>
                 <Link onClick={scrollToTop} to="/portfolio" className='bg-l-secondary font-over font-light text-[0.5rem] w-[3.5rem] py-[4px] rounded-xl'>see more</Link>
             </div>
 

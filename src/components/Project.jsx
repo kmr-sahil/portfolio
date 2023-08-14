@@ -1,10 +1,10 @@
 import React from 'react'
 import img1 from "../assets/doo.png"
 
-function Project({title, para, s1, s2, s3, img}) {
+function Project({title, para, s1, s2, s3, link, img}) {
     
   return (
-    <div className='self-stretch bg-l-secondary rounded-lg flex gap-4 justify-start items-center px-[0.5rem] py-[0.25rem] tablet:py-[0.5rem] tablet:px-[1rem]'>
+    <a href={link} target='_blank' className='self-stretch bg-l-secondary rounded-lg flex gap-4 justify-start items-center px-[0.5rem] py-[0.25rem] tablet:py-[0.5rem] tablet:px-[1rem]'>
         <img className='w-[64px] h-[64px] desktop:w-[80px] desktop:h-[80px] rounded-lg aspect-auto object-cover' src={img1} alt="img" />
         <div className='font-over flex flex-col justify-between items-start flex-wrap py-[0.5rem]'>
             <h3 className='font-medium text-[12px] desktop:text-[1rem]'>{title}</h3>
@@ -15,7 +15,7 @@ function Project({title, para, s1, s2, s3, img}) {
                 <span className='bg-l-primary px-[0.5rem] py-[1px] rounded-sm'>{s3}</span>
             </div>
         </div>
-    </div>
+    </a>
   )
 }
 
