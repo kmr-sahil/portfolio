@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 import Navbar from './components/Navbar'
@@ -8,10 +9,19 @@ import Resume from './components/Resume'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
+
+
   return (
-    <div className='w-full tablet-lg:w-[35rem] laptop:w-[45rem] desktop:w-[55rem] mx-auto ps-[20px] pe-[20px] tablet:ps-[40px] tablet:pe-[40px] laptop:flex laptop:gap-[20px]'>
+    <div data-aos="fade" className='w-full tablet-lg:w-[35rem] laptop:w-[45rem] desktop:w-[55rem] mx-auto ps-[20px] pe-[20px] tablet:ps-[40px] tablet:pe-[40px] laptop:flex laptop:gap-[20px]'>
       <Router>
 
         <Navbar></Navbar>

@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -13,7 +14,11 @@ export default {
       colors: {
         'l-primary': '#F9F5F6',
         'l-secondary': '#E7E4E5',
-        'l-text' : '#18181B'
+        'l-text' : '#18181B',
+
+        'd-primary': '#18181B',
+        'd-secondary': '#303036',
+        'd-text': '#E4E4E7',
       }
     },
     screens: {
