@@ -15,7 +15,7 @@ function Info() {
             <a target='_blank' href='https://www.linkedin.com/in/sahil-kumar-5b781721b/' className="fa-brands fa-linkedin"></a>
             <a target='_blank' href='https://twitter.com/kr_sahil' className="fa-brands fa-square-x-twitter"></a>
             <a target='_blank' href='https://github.com/kmr-sahil' className="fa-brands fa-square-github"></a>
-            <a target='_blank' href='https://www.linkedin.com/in/sahil-kumar-5b781721b/' className="fa-brands fa-square-whatsapp"></a>
+            <a href='mailto:11.sahil.kmr@gmail.com' className="fa-solid fa-envelope"></a>
         </div>
     </div>
   )
