@@ -71,13 +71,12 @@ function Resume() {
                         <span>- JavaScript</span>
                         <span>- React</span>
                         <span>- Tailwind CSS</span>
-                        <span>- Github</span>
                     </div>
                     <div className='flex flex-col items-start font-over font-light text-[12px] gap-2'>
+                        <span>- TypeScript</span>
+                        <span>- Github</span>
                         <span>- Figma</span>
                         <span>- Notion</span>
-                        <span>- Illustrator</span>
-                        <span>- Photoshop</span>
                     </div>
                 </div>
             </div>
