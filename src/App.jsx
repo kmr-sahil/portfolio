@@ -21,7 +21,7 @@ function App() {
 
 
   return (
-    <div data-aos="fade" className='w-full tablet-lg:w-[35rem] laptop:w-[45rem] desktop:w-[55rem] mx-auto ps-[20px] pe-[20px] tablet:ps-[40px] tablet:pe-[40px] laptop:flex laptop:gap-[20px]'>
+    <div className='w-full tablet-lg:w-[35rem] laptop:w-[45rem] desktop:w-[55rem] mx-auto ps-[20px] pe-[20px] tablet:ps-[40px] tablet:pe-[40px] laptop:flex laptop:gap-[20px]'>
       <Router>
 
         <Navbar></Navbar>
