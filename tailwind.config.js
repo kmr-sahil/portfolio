@@ -19,6 +19,7 @@ export default {
         'd-primary': '#18181B',
         'd-secondary': '#303036',
         'd-text': '#E4E4E7',
+        'd-accent': '#93939F',
       }
     },
     screens: {
