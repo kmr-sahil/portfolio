@@ -29,7 +29,7 @@ function Navbar() {
 
   return (
     
-    <div className='z-10  w-[94%] tablet-lg:w-[32rem] laptop:w-[45rem] desktop:w-[55rem] bg-l-primary dark:bg-d-primary  bg-opacity-90 flex outline outline-l-secondary dark:outline-d-secondary outline-[2px] rounded-full px-[24px] py-[16px] fixed laptop:bottom-[84%] bottom-[0rem] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+    <div className='backdrop-blur-lg z-10  w-[94%] tablet-lg:w-[32rem] laptop:w-[45rem] desktop:w-[55rem] bg-l-primary dark:bg-d-primary dark:bg-opacity-60 bg-opacity-60 flex outline outline-l-secondary dark:outline-d-secondary outline-[2px] rounded-full px-[24px] py-[16px] fixed laptop:bottom-[84%] bottom-[0rem] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
         <div className='basis-[30%] tablet-lg:basis-[40%] '>
             <img onClick={handleTheme} className='cursor-pointer laptop:h-[20px] pt-[2px] dark:brightness-[50]' src={moonsvg} alt="" />
         </div>
