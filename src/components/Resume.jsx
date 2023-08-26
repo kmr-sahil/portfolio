@@ -1,5 +1,5 @@
 import React from 'react'
-import res from '../assets/flow.png'
+import res from '../assets/Resume.pdf'
 
 function Resume() {
   return (
