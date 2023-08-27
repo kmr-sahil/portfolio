@@ -10,7 +10,8 @@ function Resume() {
         <div className='flex flex-col justify-start items-start pt-[5rem] pb-[1rem]'>
 
             <p className='text-[12px] tablet-lg:text-[14px] font-over font-light text-start'>
-                Amateur Frontend Engineer & UI/UX Designer with a passion for transforming ideas into reality through code & dash of creativity. Eager to contribute fresh perspectives and create remarkable products.
+            Aspiring Frontend Engineer & UI/UX Designer with a passion for transforming ideas into reality through code & dash of creativity. <br></br>
+            Currently exploring and crafting side projects to learn and grow. Eager to contribute fresh perspectives and create remarkable products.
             </p>
 
             <div className='w-[100%] my-[1.5rem] flex flex-col gap-[1rem] items-start'>
