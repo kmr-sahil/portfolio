@@ -24,8 +24,38 @@ function Navbar() {
   }
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0)
-}
+    // Set the duration of the scroll animation in milliseconds
+    const duration = 500; // Adjust as needed
+  
+    // Get the starting position of the scroll
+    const start = window.pageYOffset;
+    
+    // Calculate the distance to scroll
+    const distance = -start;
+    
+    // Get the current timestamp
+    const startTime = performance.now();
+  
+    // Define the scroll animation function
+    const scrollAnimation = (timestamp) => {
+      const elapsed = timestamp - startTime;
+      
+      // Calculate the next position of the scroll using easing function (e.g., easeOutQuad)
+      const easeFunction = t => t * (2 - t);
+      const currentPosition = start + distance * easeFunction(elapsed / duration);
+      
+      // Perform the scroll
+      window.scrollTo(0, currentPosition);
+      
+      // Check if the animation should continue
+      if (elapsed < duration) {
+        requestAnimationFrame(scrollAnimation);
+      }
+    };
+  
+    // Start the animation
+    requestAnimationFrame(scrollAnimation);
+  };
 
   return (
     
@@ -34,10 +64,10 @@ function Navbar() {
             <img onClick={handleTheme} className='cursor-pointer laptop:h-[20px] pt-[2px] dark:brightness-[50]' src={moonsvg} alt="" />
         </div>
         <div className='flex gap-1 basis-[70%] tablet-lg:basis-[60%] font-mont text-[0.7rem] laptop:text-[1rem] font-medium justify-between'>
-            <Link onClick={scrollToTop} to="/">About</Link>
-            <Link onClick={scrollToTop} to="/resume">Resume</Link>
-            <Link onClick={scrollToTop} to="/portfolio">Portfolio</Link>
-            <Link onClick={scrollToTop} to="/contact">Contact</Link>
+            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/">About</Link>
+            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/resume">Resume</Link>
+            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/portfolio">Portfolio</Link>
+            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/contact">Contact</Link>
         </div>
     </div>
   )
