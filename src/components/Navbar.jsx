@@ -64,10 +64,10 @@ function Navbar() {
             <img onClick={handleTheme} className='cursor-pointer laptop:h-[20px] pt-[2px] dark:brightness-[50]' src={moonsvg} alt="" />
         </div>
         <div className='flex gap-1 basis-[70%] tablet-lg:basis-[60%] font-mont text-[0.7rem] laptop:text-[1rem] font-medium justify-between'>
-            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/">About</Link>
-            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/resume">Resume</Link>
-            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/portfolio">Portfolio</Link>
-            <Link className='hover:font-semibold hover:scale-102 ease-in' onClick={scrollToTop} to="/contact">Contact</Link>
+            <Link className=' hover:scale-105 active:scale-105 duration-150' onClick={scrollToTop} to="/">About</Link>
+            <Link className=' hover:scale-105 active:scale-105 duration-150' onClick={scrollToTop} to="/resume">Resume</Link>
+            <Link className=' hover:scale-105 active:scale-105 duration-150' onClick={scrollToTop} to="/portfolio">Portfolio</Link>
+            <Link className=' hover:scale-105 active:scale-105 duration-150' onClick={scrollToTop} to="/contact">Contact</Link>
         </div>
     </div>
   )
