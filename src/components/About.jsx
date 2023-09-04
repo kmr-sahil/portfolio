@@ -32,8 +32,8 @@ function About() {
             <div className=' flex flex-col gap-[1rem] items-center'>
                 <h2 className='font-mont font-bold text-[1rem] tablet-lg:text-[18px] text-start self-start '>Experience</h2>
                 <div className='flex flex-wrap gap-1 tablet:gap-4'>
-                    <span className='bg-l-secondary dark:bg-d-secondary px-[0.5rem] py-[0.25rem] font-over font-medium text-[10px] tablet-lg:text-[12px] rounded-md'>+1 years of learning experience</span>
-                    <span className='bg-l-secondary dark:bg-d-secondary px-[0.5rem] py-[0.25rem] font-over font-medium text-[10px] tablet-lg:text-[12px] inline-block rounded-md'>+4 months of working experience</span>
+                    <span className='bg-l-secondary dark:bg-d-secondary px-[0.5rem] py-[0.25rem] font-over font-medium text-[10px] tablet-lg:text-[12px] rounded-md'>1+ years of learning experience</span>
+                    <span className='bg-l-secondary dark:bg-d-secondary px-[0.5rem] py-[0.25rem] font-over font-medium text-[10px] tablet-lg:text-[12px] inline-block rounded-md'>4+ months of working experience</span>
                 </div>
             </div>
 
