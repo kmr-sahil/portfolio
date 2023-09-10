@@ -44,6 +44,7 @@ function Resume() {
                         <span className='flex items-center justify-center gap-2'> <iconify-icon icon="skill-icons:css"></iconify-icon> <p className='mt-[4px]'>CSS</p></span>
                     </div>
                     <div className='flex flex-col items-start font-over font-light text-[12px] gap-2'>
+                        <span className='flex items-center justify-center gap-2'> <iconify-icon icon="skill-icons:nodejs-dark"></iconify-icon> <p className='mt-[4px]'>Node.js</p></span>
                         <span className='flex items-center justify-center gap-2'> <iconify-icon icon="skill-icons:typescript"></iconify-icon> <p className='mt-[4px]'>TypeScript</p></span>
                         <span className='flex items-center justify-center gap-2'> <iconify-icon icon="skill-icons:git"></iconify-icon> <p className='mt-[4px]'>Git</p></span>
                         <span className='flex items-center justify-center gap-2'> <iconify-icon icon="skill-icons:figma-dark"></iconify-icon> <p className='mt-[4px]'>Figma</p></span>
