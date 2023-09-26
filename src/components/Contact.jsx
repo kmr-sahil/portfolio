@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
+
+  const [disable, setDisable] = useState(true)
+  const [details, setDetails] = useState({
+    email: "",
+    message: "",
+  })
+
+  useEffect(() => {
+    if(details.email.length > 4 && details.message.length > 5){
+      setDisable(false)
+    } else {
+      setDisable(true)
+    }
+  }, [details])
 
   const form = useRef();
 
@@ -30,9 +44,9 @@ function Contact() {
         <div className='flex flex-col justify-start items-start pt-[5rem] pb-[1rem] gap-4'>
           <form ref={form} onSubmit={sendEmail} className='flex flex-col justify-start items-start self-stretch gap-4'>
 
-            <input id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' type="email" name="from_email" placeholder='11.sahil.kmr@gmail.com'/>
-            <textarea id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' name="message" rows="5" placeholder='enter your message'></textarea>
-            <input className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem] ' type="submit" value="Send message"/>
+            <input id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' type="email" name="from_email" value={details.email} onChange={(e) => setDetails({...details, email: e.target.value})} placeholder='11.sahil.kmr@gmail.com'/>
+            <textarea id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' name="message" rows="5" value={details.message} onChange={(e) => setDetails({...details, message: e.target.value})} placeholder='enter your message'></textarea>
+            <input className='cursor-pointer self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem] ' type="submit" {...(disable ? { disabled: true } : {})} value="Send message" />
 
           </form>
 
