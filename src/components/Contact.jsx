@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Contact() {
 
@@ -9,6 +10,17 @@ function Contact() {
     email: "",
     message: "",
   })
+
+  const notify = () => {
+    
+      toast('Message send successfully', {
+        style: {
+          background: '#cfffcc',
+        },
+      });
+    
+    
+  }
 
   useEffect(() => {
     if(details.email.length > 4 && details.message.length > 5){
@@ -46,7 +58,8 @@ function Contact() {
 
             <input id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' type="email" name="from_email" value={details.email} onChange={(e) => setDetails({...details, email: e.target.value})} placeholder='11.sahil.kmr@gmail.com'/>
             <textarea id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' name="message" rows="5" value={details.message} onChange={(e) => setDetails({...details, message: e.target.value})} placeholder='enter your message'></textarea>
-            <input className='cursor-pointer self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem] ' type="submit" {...(disable ? { disabled: true } : {})} value="Send message" />
+            <input className='cursor-pointer self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem] ' type="submit" {...(disable ? { disabled: true } : {})} value="Send message" onClick={notify} />
+            <Toaster />
 
           </form>
 
