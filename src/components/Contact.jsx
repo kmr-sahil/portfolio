@@ -12,18 +12,32 @@ function Contact() {
   })
 
   const notify = () => {
-    
+    if(disable) {
+      toast('Add proper email or message', {
+        duration: 8000,
+        style: {
+          background: '#ffadad',
+        },
+      });
+    }
+    else {
       toast('Message send successfully', {
+        duration: 8000,
         style: {
           background: '#cfffcc',
         },
       });
-    
+    }
     
   }
 
   useEffect(() => {
-    if(details.email.length > 4 && details.message.length > 5){
+    let a = details.email.includes('@') 
+    let b = details.email.includes('.')
+    let c = details.email.includes(' ')
+    let d = ((details.email.charAt(details.email.length - 1) === '@') || (details.email.charAt(details.email.length - 1) === '.') ? true : false)
+
+    if( !d === true && !c === true && a === true && b === true && details.email.length > 4 && details.message.length > 10){
       setDisable(false)
     } else {
       setDisable(true)
@@ -34,7 +48,10 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    if(disable) {
+      return
+    } 
+    else {
 
     emailjs.sendForm('service_0eo1oyv', 'template_u5c3v9t', form.current, 'PyJ-C_RjU7bKsFmiD')
       .then((result) => {
@@ -46,6 +63,7 @@ function Contact() {
       }, (error) => {
           console.log(error.text);
       });
+    }
   };
 
   return (
@@ -58,7 +76,7 @@ function Contact() {
 
             <input id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' type="email" name="from_email" value={details.email} onChange={(e) => setDetails({...details, email: e.target.value})} placeholder='11.sahil.kmr@gmail.com'/>
             <textarea id='reset' className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]' name="message" rows="5" value={details.message} onChange={(e) => setDetails({...details, message: e.target.value})} placeholder='enter your message'></textarea>
-            <input className='cursor-pointer self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem] ' type="submit" {...(disable ? { disabled: true } : {})} value="Send message" onClick={notify} />
+            <input className='cursor-pointer self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-mont font-light text-[10px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem] ' type="submit" value="Send message" onClick={notify} />
             <Toaster />
 
           </form>
