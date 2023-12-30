@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+::selection {
+    color: rgb(149, 255, 130);
+}
 
 @layer base {
 

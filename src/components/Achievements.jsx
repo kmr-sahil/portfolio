@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Achievements() {
   return (
     <>
-        <div className=' flex flex-col gap-[1rem] items-center my-[2rem]'>
+        <div className=' flex flex-col gap-[1rem] items-center'>
                 <h2 className='font-mont font-bold text-[1rem] tablet-lg:text-[18px] text-start self-start '>Achievements</h2>
                 <div className='flex flex-wrap gap-1 tablet:gap-4'>
                     <Link to="https://moonshot.scaler.com/s/li/xgo1cLIeDl" className='flex items-center justify-center bg-l-secondary dark:bg-d-secondary px-[0.5rem] py-[0.25rem] font-over font-medium text-[10px] tablet-lg:text-[12px] rounded-md'>JavaScript Certification - Scalar</Link>

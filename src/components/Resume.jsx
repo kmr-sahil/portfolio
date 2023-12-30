@@ -1,5 +1,6 @@
 import React from 'react'
 import res from '../assets/Resume.pdf'
+import Achievements from './Achievements'
 
 function Resume() {
   return (
@@ -14,7 +15,7 @@ function Resume() {
             Currently exploring and crafting side projects to learn and grow. Eager to contribute fresh perspectives and create remarkable products.
             </p>
 
-            <div className='w-[100%] my-[1.5rem] flex flex-col gap-[1rem] items-start'>
+            <div className='w-[100%] my-[1rem] flex flex-col gap-[1rem] items-start'>
 
                 <h2 className='font-mont font-bold text-[1rem] tablet-lg:text-[18px] text-start self-start'>Experience</h2>
 
@@ -31,7 +32,7 @@ function Resume() {
                 </div>
             </div>
 
-            <div className='w-[100%] my-[1.5rem] flex flex-col gap-[1rem] items-start'>
+            <div className='w-[100%] my-[1rem] flex flex-col gap-[1rem] items-start'>
 
                 <h2 className='font-mont font-bold text-[1rem] tablet-lg:text-[18px] text-start self-start'>Tech Stack</h2>
 
@@ -51,20 +52,20 @@ function Resume() {
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:typescript"></iconify-icon> <p className='mt-[4px]'>TypeScript</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:git"></iconify-icon> <p className='mt-[4px]'>Git</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:figma-dark"></iconify-icon> <p className='mt-[4px]'>Figma</p></span>
-                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="logos:notion-icon"></iconify-icon> <p className='mt-[4px]'>Notion</p></span>
+                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:java-light"></iconify-icon> <p className='mt-[4px]'>Java</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:docker"></iconify-icon> <p className='mt-[4px]'>Docker</p></span>
                     </div>
                 </div>
             </div>
 
-            <div className='w-[100%] my-[1.5rem] flex flex-col gap-[1rem] items-start'>
+            <div className='w-[100%] mt-[1rem] mb-[2rem] flex flex-col gap-[1rem] items-start'>
 
                 <h2 className='font-mont font-bold text-[1rem] tablet-lg:text-[18px] text-start self-start'>Education</h2>
 
                 <div className='self-stretch flex flex-col justify-start items-start gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over px-[1rem] py-[0.5rem]'>
                     <h2 className='font-medium text-[12px] text-start'>Bachelor In Technology (Information Technology)</h2>
                     <p className='text-start font-light text-[12px]'>
-                        2021-2025 <br></br>
+                        2021 - Present <br></br>
                         Techno International Newtown
                     </p>
                 </div>
@@ -72,7 +73,7 @@ function Resume() {
                 <div className='self-stretch flex flex-col justify-start items-start gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over px-[1rem] py-[0.5rem]'>
                 <h2 className='font-medium text-[12px] text-start'>ISC - (Computer Science)</h2>
                     <p className='text-start font-light text-[12px]'>
-                        2019-2021 <br></br>
+                        2019 - 2021 <br></br>
                         BGES (ISC)
                     </p>
                 </div>
@@ -80,15 +81,17 @@ function Resume() {
                 <div className='self-stretch flex flex-col justify-start items-start gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over px-[1rem] py-[0.5rem]'>
                 <h2 className='font-medium text-[12px] text-start'>ISCE - (Science)</h2>
                     <p className='text-start font-light text-[12px]'>
-                        2009-2019 <br></br>
+                        2009 - 2019 <br></br>
                         Loyola High School
                     </p>
                 </div>
 
             </div>
 
+            <Achievements/>
 
-            <a href={res} download="resume" className='self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over font-light text-[12px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]'>
+
+            <a href={res} download="resume" className='mt-[2rem] self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over font-light text-[12px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]'>
                 <i className="fa-solid fa-file-arrow-down"></i>
                 Download Resume
             </a>
