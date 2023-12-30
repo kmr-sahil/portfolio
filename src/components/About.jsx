@@ -1,6 +1,7 @@
 import React from 'react'
 import Project from './Project'
 import { Link } from 'react-router-dom'
+import Achievements from './Achievements'
 
 function About() {
 
@@ -36,6 +37,8 @@ function About() {
                     <span className='bg-l-secondary dark:bg-d-secondary px-[0.5rem] py-[0.25rem] font-over font-medium text-[10px] tablet-lg:text-[12px] inline-block rounded-md'>4+ months of working experience</span>
                 </div>
             </div>
+
+            <Achievements/>
 
         </div>
     </div>
