@@ -10,28 +10,28 @@ function Portfolio() {
       img: "img1",
       skills: ["Next.js", "Mongo DB", "Tailwind CSS"],
       link: "https://github.com/kmr-sahil/auth-w-next.js",
-      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+      desc: "A comprehensive authentication system enabling login, signup, profile info, and password recovery via tokens and cookies.",
     },
     {
       title: "Kolor Tool",
       img: "kolor",
       skills: ["React", "Tailwind CSS", "Front-End"],
       link: "https://kolor-tool.vercel.app",
-      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+      desc: "Effortlessly create harmonious color palettes with my innovative opacity-free shade generator website.",
     },
     {
       title: "Contact Manager",
       img: "img1",
       skills: ["Node.js", "Express.js", "Back-End"],
       link: "https://github.com/kmr-sahil/Contact-Manager",
-      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+      desc: "A secure backend project enabling user account creation and CRUD operations for managing contact information using JWT.",
     },
     {
       title: "Potion",
       img: "img1",
       skills: ["Node.js", "Express.js", "Back-End"],
       link: "https://github.com/kmr-sahil/docs",
-      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+      desc: "Revolutionary todo app with vibrant and playful UI, prioritizing user engagement and dynamic task management",
     },
     {
       title: "Retro News",
@@ -45,7 +45,7 @@ function Portfolio() {
       img: "dooze",
       skills: ["Tailwind CSS", "Figma", "UI/UX"],
       link: "https://kmr-sahil.github.io/dooze-redesign/",
-      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+      desc: "Elevated brand presence with a dynamic landing page Re-design, crafting an well organize User Interface at Dooze.",
     },
   ]
 

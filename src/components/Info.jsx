@@ -6,7 +6,7 @@ function Info() {
 
 
   return (
-    <div className=' flex laptop:flex-col gap-[20px] justify-center laptop:justify-start mb-[20px] laptop:basis-[30%] laptop:mt-[6rem]'>
+    <div className='flex laptop:flex-col gap-[20px] justify-center laptop:justify-start mb-[20px] laptop:basis-[30%] laptop:mt-[6rem]'>
         <div data-aos="fade" className='grow basis-[70%] laptop:grow-0 laptop:basis-[0%] font-mont flex flex-col tablet:flex-row laptop:flex-col tablet:gap-4 justify-center items-center outline outline-l-secondary dark:outline-d-secondary outline-[2px] rounded-xl py-[24px]'>
             <img className='w-[5rem] rounded-xl' src={profile} alt="" />
             <div>

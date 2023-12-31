@@ -5,6 +5,25 @@ import Achievements from './Achievements'
 
 function About() {
 
+    const data = [
+        {
+          title: "Authentitcation System",
+          img: "img1",
+          skills: ["Next.js", "Mongo DB", "Back-End"],
+          link: "https://github.com/kmr-sahil/auth-w-next.js",
+          desc: "A comprehensive authentication system enabling login, signup, profile info, and password recovery via tokens and cookies.",
+        },
+        {
+          title: "Kolor Tool",
+          img: "kolor",
+          skills: ["React", "Tailwind CSS", "Front-End"],
+          link: "https://kolor-tool.vercel.app",
+          desc: "Effortlessly create harmonious color palettes with my innovative opacity-free shade generator website.",
+        },
+    ]
+
+    let i =0;
+
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -25,9 +44,13 @@ function About() {
 
             <div className='w-[100%] my-[1.5rem] flex flex-col gap-[1rem] items-center'>
                 <h2 className='font-mont font-bold text-[1rem] tablet-lg:text-[18px] text-start self-start '>Portfolio</h2>
-                <Project link={'https://github.com/kmr-sahil/retro-news'} title={"Retro News"} img={"img1"} s1={"React"} s2={"Tailwind CSS"} s3={"Front-End"} para={"Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API."}></Project>
-                <Project link={'https://github.com/kmr-sahil/kolor-tool'} title={"Kolor Tool"} img={"img1"} s1={"HTML"} s2={"Tailwind CSS"} s3={"JavaScript"} para={"Effortlessly create harmonious color palettes with my innovative opacity-free shade generator website."}></Project>
-                <Link onClick={scrollToTop} to="/portfolio" className='bg-l-secondary dark:bg-d-secondary font-over font-light text-[0.5rem] w-[3.5rem] py-[4px] rounded-xl'>see more</Link>
+                <div className='flex flex-wrap justify-start items-start gap-4'> 
+                {data.map((item, index) => (
+                        <Project key={i++} data={item}/>
+                ))}
+                </div>
+                
+                <Link onClick={scrollToTop} to="/portfolio" className='bg-l-secondary dark:bg-d-secondary font-over font-light text-[0.65rem] px-[12px] py-[4px] rounded-xl'>see more</Link>
             </div>
 
             <Achievements/>
@@ -40,7 +63,6 @@ function About() {
                 </div>
             </div>
 
-            
 
         </div>
     </div>
