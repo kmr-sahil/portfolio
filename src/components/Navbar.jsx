@@ -7,22 +7,21 @@ import { useEffect, useState } from 'react';
 
 function Navbar() {
 
-  const [theme, setTheme] = useState("Light");
-  useEffect(() => {
-    if(theme === 'dark'){
-      document.documentElement.classList.add('dark')
-    }
-    else{
-      document.documentElement.classList.remove('dark')
-    }
+  const storedTheme = localStorage.getItem('theme');
+  const [theme, setTheme] = useState(storedTheme || "light");
 
-    console.log(theme)
-  }, [theme])
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   const handleTheme = () => {
-    setTheme( theme === "dark" ? "light" : "dark" )
-    
-  }
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   const scrollToTop = () => {
     // Set the duration of the scroll animation in milliseconds
