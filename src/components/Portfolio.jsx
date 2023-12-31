@@ -56,7 +56,7 @@ function Portfolio() {
         <div className='left-0 top-6 box-border font-mont font-bold text-[1rem] tablet-lg:text-[18px] bg-l-text dark:bg-d-accent absolute w-[8rem] rounded-sm border-r-[15px] border-r-l-primary dark:border-r-d-primary  border-t-[16px] border-b-[16px] border-t-l-text dark:border-t-d-accent border-b-l-text dark:border-b-d-accent'>
             <h1 className='absolute -top-3 left-2 text-l-primary dark:text-d-primary'>Portfolio</h1>
         </div>
-        <div className='flex flex-col justify-start items-start pt-[5rem] pb-[1rem] gap-4'>
+        <div className='flex flex-wrap justify-start items-start pt-[5rem] pb-[1rem] gap-4'>
 
           {data.map((item, index) => (
              <Project key={i++} data={item}/>
