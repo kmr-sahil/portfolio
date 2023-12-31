@@ -1,6 +1,7 @@
 import React from 'react'
 import Project from './Project'
 
+
 function Portfolio() {
 
   const data = [
@@ -13,7 +14,7 @@ function Portfolio() {
     },
     {
       title: "Kolor Tool",
-      img: "img1",
+      img: "kolor",
       skills: ["React", "Tailwind CSS", "Front-End"],
       link: "https://kolor-tool.vercel.app",
       desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
@@ -34,14 +35,14 @@ function Portfolio() {
     },
     {
       title: "Retro News",
-      img: "img1",
+      img: "news",
       skills: ["React", "Tailwind CSS"],
       link: "https://retro-news-nine.vercel.app",
       desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
     },
     {
       title: "Dooze",
-      img: "img1",
+      img: "dooze",
       skills: ["Tailwind CSS", "Figma", "UI/UX"],
       link: "https://kmr-sahil.github.io/dooze-redesign/",
       desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
