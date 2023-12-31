@@ -5,17 +5,45 @@ function Portfolio() {
 
   const data = [
     {
-      title: "Retro News",
+      title: "Authentitcation System",
       img: "img1",
-      skills: ["React", "Tailwind CSS"],
-      link: "https://github.com/kmr-sahil/retro-news",
+      skills: ["Next.js", "Mongo DB", "Tailwind CSS"],
+      link: "https://github.com/kmr-sahil/auth-w-next.js",
       desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
     },
     {
       title: "Kolor Tool",
       img: "img1",
       skills: ["React", "Tailwind CSS", "Front-End"],
-      link: "https://github.com/kmr-sahil/retro-news",
+      link: "https://kolor-tool.vercel.app",
+      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+    },
+    {
+      title: "Contact Manager",
+      img: "img1",
+      skills: ["Node.js", "Express.js", "Back-End"],
+      link: "https://github.com/kmr-sahil/Contact-Manager",
+      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+    },
+    {
+      title: "Potion",
+      img: "img1",
+      skills: ["Node.js", "Express.js", "Back-End"],
+      link: "https://github.com/kmr-sahil/docs",
+      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+    },
+    {
+      title: "Retro News",
+      img: "img1",
+      skills: ["React", "Tailwind CSS"],
+      link: "https://retro-news-nine.vercel.app",
+      desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
+    },
+    {
+      title: "Dooze",
+      img: "img1",
+      skills: ["Tailwind CSS", "Figma", "UI/UX"],
+      link: "https://kmr-sahil.github.io/dooze-redesign/",
       desc: "Reviving Nostalgia: A Modern Take on Retro Newspaper Layout – Seamlessly Fetching and Displaying News through an API.",
     },
   ]
