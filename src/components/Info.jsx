@@ -8,7 +8,13 @@ function Info() {
   return (
     <div className='flex laptop:flex-col gap-[20px] justify-center laptop:justify-start mb-[20px] laptop:basis-[30%] laptop:mt-[6rem]'>
         <div data-aos="fade" className='grow basis-[70%] laptop:grow-0 laptop:basis-[0%] font-mont flex flex-col tablet:flex-row laptop:flex-col tablet:gap-4 justify-center items-center outline outline-l-secondary dark:outline-d-secondary outline-[2px] rounded-xl py-[24px]'>
-            <img className='w-[5rem] rounded-xl' src={profile} alt="" />
+            <div className='relative'>
+              <div className='absolute -right-3 -top-2 z-20 w-[20px] h-[20px] rounded-full bg-[#267d3f] bg-opacity flex items-center justify-center'>
+                <div className='w-[8px] h-[8px] animate-[ping_1.2s_ease-out_infinite] bg-[#00ff47] rounded-full '></div>
+              </div>
+                <img className='w-[5rem] rounded-xl' src={profile} alt="" /> 
+            </div>
+          
             <div>
               <h1 className='font-bold text-[1.25rem]'>Sahil Kumar</h1>
               <div className=' font-medium text-[0.625rem] bg-l-secondary dark:bg-d-secondary px-[0.5rem] py-[4px] rounded-full'>UI Developer</div>

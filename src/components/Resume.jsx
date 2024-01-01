@@ -38,21 +38,23 @@ function Resume() {
 
                 <div className='self-stretch flex justify-between items-start gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over px-[1.5rem] tablet:pr-[6rem] py-[1rem]'>
                     <div className='flex flex-col items-start font-over font-light text-[14px] gap-2'>
+                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:html"></iconify-icon> <p className='mt-[4px]'>HTML</p></span>
+                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:css"></iconify-icon> <p className='mt-[4px]'>CSS</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:javascript"></iconify-icon> <p className='mt-[4px]'>JavaScript</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:react-dark"></iconify-icon> <p className='mt-[4px]'>React</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:tailwindcss-dark"></iconify-icon> <p className='mt-[4px]'>Tailwind CSS</p></span>
-                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:html"></iconify-icon> <p className='mt-[4px]'>HTML</p></span>
-                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:css"></iconify-icon> <p className='mt-[4px]'>CSS</p></span>
+
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:expressjs-dark"></iconify-icon> <p className='mt-[4px]'>Express.js</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:mongodb"></iconify-icon> <p className='mt-[4px]'>Mongo DB</p></span>
                     </div>
                     <div className='flex flex-col items-start font-over font-light text-[14px] gap-2'>
+                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:java-light"></iconify-icon> <p className='mt-[4px]'>Java</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:nextjs-dark"></iconify-icon> <p className='mt-[4px]'>Next.js</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:nodejs-dark"></iconify-icon> <p className='mt-[4px]'>Node.js</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:typescript"></iconify-icon> <p className='mt-[4px]'>TypeScript</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:git"></iconify-icon> <p className='mt-[4px]'>Git</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:figma-dark"></iconify-icon> <p className='mt-[4px]'>Figma</p></span>
-                        <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:java-light"></iconify-icon> <p className='mt-[4px]'>Java</p></span>
+
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:docker"></iconify-icon> <p className='mt-[4px]'>Docker</p></span>
                     </div>
                 </div>
