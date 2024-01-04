@@ -43,7 +43,6 @@ function Resume() {
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:javascript"></iconify-icon> <p className='mt-[4px]'>JavaScript</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:react-dark"></iconify-icon> <p className='mt-[4px]'>React</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:tailwindcss-dark"></iconify-icon> <p className='mt-[4px]'>Tailwind CSS</p></span>
-
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:expressjs-dark"></iconify-icon> <p className='mt-[4px]'>Express.js</p></span>
                         <span className='flex items-center justify-center gap-3'> <iconify-icon style={{"font-size": "20px"}} icon="skill-icons:mongodb"></iconify-icon> <p className='mt-[4px]'>Mongo DB</p></span>
                     </div>
@@ -93,7 +92,7 @@ function Resume() {
             <Achievements/>
 
 
-            <a href={res} download="resume" className='mt-[2rem] self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over font-light text-[14px] tablet:text-[16px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]'>
+            <a href={res} download="Sahil_Kumar_Resume" className='mt-[2rem] self-stretch flex justify-center items-baseline gap-2 grow bg-l-secondary dark:bg-d-secondary rounded-md font-over font-light text-[14px] tablet:text-[16px] text-l-text dark:text-d-text px-[1rem] py-[0.5rem]'>
                 <i className="fa-solid fa-file-arrow-down"></i>
                 Download Resume
             </a>
