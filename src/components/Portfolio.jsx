@@ -7,7 +7,7 @@ function Portfolio() {
   const data = [
     {
       title: "Authentitcation System",
-      img: "img1",
+      img: "nextauth",
       skills: ["Next.js", "Mongo DB", "Tailwind CSS"],
       link: "https://github.com/kmr-sahil/auth-w-next.js",
       desc: "A comprehensive authentication system enabling login, signup, profile info, and password recovery via tokens and cookies.",
@@ -20,6 +20,13 @@ function Portfolio() {
       desc: "Effortlessly create harmonious color palettes with my innovative opacity-free shade generator website.",
     },
     {
+      title: "Pinterest Clone",
+      img: "pinterest",
+      skills: ["Tailwind CSS", "Express.js", "Passport.js"],
+      link: "https://github.com/kmr-sahil/pin",
+      desc: "Made Pinterest clone which has the functionality of login/signup, uploading pins, exploring feed & profile picture updation.",
+    },
+    {
       title: "Contact Manager",
       img: "img1",
       skills: ["Node.js", "Express.js", "Back-End"],
@@ -28,7 +35,7 @@ function Portfolio() {
     },
     {
       title: "Potion",
-      img: "img1",
+      img: "potion",
       skills: ["Node.js", "Express.js", "Back-End"],
       link: "https://github.com/kmr-sahil/docs",
       desc: "Revolutionary todo app with vibrant and playful UI, prioritizing user engagement and dynamic task management",
