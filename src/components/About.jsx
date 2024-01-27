@@ -36,7 +36,7 @@ function About() {
         <div className='flex flex-col justify-start items-start pt-[5rem] pb-[1rem]'>
 
             <p className='text-[14px] tablet-lg:text-[16px] font-over font-light text-start'>
-                <span className='block pb-[1rem]'>Building <a href="https://github.com/AuctionTable" className='bg-l-secondary dark:bg-d-secondary font-over px-[0.75rem] py-[0.25rem] rounded-md font-medium text-[12px] tablet-lg:text-[14px]'>AuctionTable</a></span>
+                <span className='block pb-[1rem]'>Building <a href="https://github.com/kmr-sahil/saras-uitoolbox" className='bg-l-secondary dark:bg-d-secondary font-over px-[0.75rem] py-[0.25rem] rounded-md font-medium text-[12px] tablet-lg:text-[14px]'>UI ToolBox</a></span>
                 <span className='block pb-[1rem]'>Exp <a href="" className='bg-l-secondary dark:bg-d-secondary font-over px-[0.75rem] py-[0.25rem] rounded-md font-medium text-[12px] tablet-lg:text-[14px]'>Design Intern @DailyDumbbell</a></span>
                 Aspiring Frontend Engineer & UI/UX Designer with a passion for transforming ideas into reality through code & dash of creativity. <br></br>
                 Currently exploring and crafting side projects to learn and grow. Eager to contribute fresh perspectives and create remarkable products.

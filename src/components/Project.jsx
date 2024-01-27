@@ -6,6 +6,7 @@ import news from "../assets/news.png"
 import potion from "../assets/potion.png"
 import nextauth from "../assets/nextauth.png"
 import pinterest from "../assets/pinterest.webp"
+import auction from "../assets/auction.png"
 
 
 function Project({data}) {
@@ -17,7 +18,8 @@ function Project({data}) {
     dooze: dooze,
     potion: potion,
     nextauth: nextauth,
-    pinterest: pinterest, // map other identifiers to respective images
+    pinterest: pinterest,
+    auction: auction, // map other identifiers to respective images
     // Add mappings for other image identifiers
   };
 

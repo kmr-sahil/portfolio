@@ -6,18 +6,18 @@ function Portfolio() {
 
   const data = [
     {
+      title: "Auctiontable",
+      img: "auction",
+      skills: ["Next.js", "MongoDB", "Tailwind CSS"],
+      link: "https://first-steps-zeta.vercel.app/",
+      desc: "Led creation of an exhilarating online auction platform, optimizing user experience for seamless buying and selling.",
+    },
+    {
       title: "Authentitcation System",
       img: "nextauth",
       skills: ["Next.js", "Mongo DB", "Tailwind CSS"],
       link: "https://github.com/kmr-sahil/auth-w-next.js",
       desc: "A comprehensive authentication system enabling login, signup, profile info, and password recovery via tokens and cookies.",
-    },
-    {
-      title: "Kolor Tool",
-      img: "kolor",
-      skills: ["React", "Tailwind CSS", "Front-End"],
-      link: "https://kolor-tool.vercel.app",
-      desc: "Effortlessly create harmonious color palettes with my innovative opacity-free shade generator website.",
     },
     {
       title: "Pinterest Clone",

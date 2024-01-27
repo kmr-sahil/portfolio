@@ -1,5 +1,5 @@
 import React from 'react'
-import res from '../assets/Resume.pdf'
+import res from '../assets/Resume_Sahil_Kumar.pdf'
 import Achievements from './Achievements'
 
 function Resume() {
